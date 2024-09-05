@@ -1,5 +1,5 @@
 plugins {
-    id("java")
+    application
 }
 
 group = "ru.anseranser"
