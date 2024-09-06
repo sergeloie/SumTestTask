@@ -1,5 +1,6 @@
 plugins {
     application
+    checkstyle
 }
 
 group = "ru.anseranser"
@@ -16,4 +17,6 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+    minHeapSize = "1024m"
+    maxHeapSize = "4096m"
 }
