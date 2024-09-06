@@ -49,4 +49,15 @@ class MainTest {
     void testGetTwoMinSumWithLargeNumbers() {
         assertEquals(Integer.MAX_VALUE + 1L, getTwoMinSum(new int[]{Integer.MAX_VALUE, 1, Integer.MAX_VALUE}));
     }
+
+    @Test
+    void testGetTwoMinSumWithBothLargeNumbers() {
+        assertEquals(Integer.MAX_VALUE * 2L,
+                getTwoMinSum(new int[]{Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE}));
+    }
+
+    @Test
+    void testGetTwoSumWithBothLargeNegativeNumbers() {
+        assertEquals(Integer.MIN_VALUE * 2L, getTwoMinSum(new int[]{Integer.MIN_VALUE, 1, Integer.MIN_VALUE}));
+    }
 }
